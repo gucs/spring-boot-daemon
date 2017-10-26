@@ -37,11 +37,12 @@
 			<outputDirectory/>
 			<destName>${dist.project.id}.xml</destName>
 		</file>
+<!--
 		<file>
 			<source>${dist.dir}/service.exe.config</source>
 			<outputDirectory/>
 			<destName>${dist.project.id}.exe.config</destName>
 		</file>
-
+-->
 	</files>
 </assembly>

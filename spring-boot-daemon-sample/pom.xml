@@ -49,6 +49,7 @@
 
 	<build>
 		<plugins>
+			<!-- copy winsw-2.1.2-bin.exe to dist-dir and rename to service.exe -->
 			<plugin>
 				<groupId>org.apache.maven.plugins</groupId>
 				<artifactId>maven-dependency-plugin</artifactId>
@@ -75,6 +76,8 @@
 					</execution>
 				</executions>
 			</plugin>
+
+			<!-- copy service.xml to dist-dir, service.exe.config is optional for WinSW 2.x -->
 			<plugin>
 				<groupId>org.apache.maven.plugins</groupId>
 				<artifactId>maven-resources-plugin</artifactId>
@@ -99,6 +102,7 @@
 				</executions>
 			</plugin>
 
+			<!-- package uninx and windows zip -->
 			<plugin>
 				<groupId>org.apache.maven.plugins</groupId>
 				<artifactId>maven-assembly-plugin</artifactId>

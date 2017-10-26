@@ -45,12 +45,12 @@ public class SpringBootDaemon implements Daemon {
 	}
 
 	public void start() throws Exception {
-		System.out.println("Starting Spring Boot application [" + this.springBootApp.getName() + "]");
+		System.out.println("Starting Spring Boot application [" + this.springBootApp.getName() + "] from daemon.");
 		this.content = SpringApplication.run(springBootApp);
 	}
 
 	public void stop() throws Exception {
-		System.out.println("Stopping Spring Boot application [" + this.springBootApp.getName() + "]");
+		System.out.println("Stopping Spring Boot application [" + this.springBootApp.getName() + "] from daemon.");
 		this.content.close();
 	}
 
